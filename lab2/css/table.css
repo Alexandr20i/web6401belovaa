@@ -1,0 +1,50 @@
+/* Стили для таблицы */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-block-end: 50px; /* Промежуток между таблицей и футером */
+
+}
+
+table {
+    width: 80%; /* Задайте ширину таблицы, например 80% */
+    max-width: 1000px; /* Ограничим максимальную ширину */
+    border-collapse: separate;
+    border-spacing: 5px 5px; /* Увеличивает расстояние между столбцами и строками */
+    margin-top: 20px;
+}
+
+th, td {
+    border: 0px solid #ddd;
+    padding: 5px 5px; /* Увеличивает внутренние отступы для увеличения пространства в ячейках */
+}
+
+th {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Настроим ширину столбцов */
+th:first-child, td:first-child {
+    width: 150px; /* Ширина для столбца "Название" */
+    text-align: left;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 120px; /* Ширина для столбца "200 мл" */
+    text-align: right;
+}
+th:nth-child(3), td:nth-child(3) {
+    width: 120px; /* Ширина для столбца "400 мл" */
+    text-align: right;
+}
+th:nth-child(4), td:nth-child(4) {
+    width: 120px; /* Ширина для столбца "600 мл" */
+    text-align: right;
+}
+
+th:last-child, td:last-child {
+    width: 50%; /* Ширина для столбца "Описание" */
+    text-align: left;
+}
