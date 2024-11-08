@@ -1,0 +1,118 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6b4f4f;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header-right a {
+    color: #ffe;
+    text-decoration: none;
+    margin-left: 26px;
+}
+
+.header-right a:hover {
+    color: #fff;
+}
+
+/* Стили для главного содержимого */
+main {
+    padding: 0px;
+}
+
+.main-image {
+    max-width: 100vw;  /* Ограничиваем ширину размером окна браузера */
+    max-height: 100vh; /* Ограничиваем высоту размером окна браузера */
+    width: 100%;       /* Задаем ширину 100% для адаптации к контейнеру */
+    height: auto;      /* Сохраняем пропорции изображения */
+    display: block;
+    margin: 0 auto;    /* Центрируем изображение */
+}
+
+.hero {
+    position: relative;
+    background-image: url('../picture/main.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 60px;
+    overflow: hidden; /* Чтобы псевдоэлемент не выходил за границы */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой для затемнения */
+    z-index: 1; /* Псевдоэлемент будет ниже текста */
+}
+
+.hero-text {
+    position: relative; /* Размещаем текст поверх затемненного слоя */
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+
+
+section h2, main h2 {
+    color: #6b4f4f;
+}
+
+footer {
+    background-color: #6b4f4f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 50px; /* Промежуток между основным содержимым и футером */
+}
+
