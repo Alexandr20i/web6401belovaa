@@ -2,19 +2,19 @@
  * Напишите функцию, которая проверяет, является ли число целым используя побитовые операторы
  * @param {*} n
  */
-function isInteger(n) {
-    return (n | 0) === n;
+function isInteger(n) { 
+    return (n | 0) === n
 }
 
 /**
  * Напишите функцию, которая возвращает массив четных чисел от 2 до 20 включительно
  */
-function even() {
-    let mas=[];
-    for (i=2;i<41;i+=2){
-        mas.push(i);
+function even() { 
+    const array = [];
+    for(let i = 2; i <= 20; i += 2){
+        array.push(i);
     }
-    return mas;
+    return array
 }
 
 /**
@@ -22,11 +22,11 @@ function even() {
  * @param {*} n
  */
 function sumTo(n) {
-    let sum=0;
-    for (i=0;i<n+1;i++){
-        sum+=i;
+    let sum = 0;
+    for(let i = 0; i <= n; i++){
+        sum += i;
     }
-    return sum;
+    return sum
 }
 
 /**
@@ -34,9 +34,7 @@ function sumTo(n) {
  * @param {*} n
  */
 function recSumTo(n) {
-    if (n <= 1) {
-        return n; 
-    }
+    if(n === 1) return 1;
     return n + recSumTo(n - 1);
 }
 
@@ -45,10 +43,8 @@ function recSumTo(n) {
  * @param {*} n
  */
 function factorial(n) {
-    if (n <= 1) {
-        return 1;
-    }
-    return n * factorial(n - 1);
+    if(n === 0) return 1;
+    return n * factorial(n- 1);
 }
 
 /**
@@ -56,12 +52,10 @@ function factorial(n) {
  * @param {*} n
  */
 function isBinary(n) {
-    if (n === 1) {
-        return true;
-    }
-    if (n % 2 == 0) {
-        return isBinary(n / 2);
-    }
+    if(n === 0) return false;
+    while(n % 2 === 0)
+    { n /= 2;}
+    return n === 1;
 }
 
 /**
@@ -69,10 +63,15 @@ function isBinary(n) {
  * @param {*} n
  */
 function fibonacci(n) {
-    if (n <= 1) {
-        return n;
+    if(n <= 1) return n;
+    let a = 0, b = 1;
+    for (let i = 2; i <= n; i++)
+    {
+        let c = a + b;
+        a = b;
+        b = c;
     }
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return b;
 }
 
 /** Напишите функцию, которая принимает начальное значение и функцию операции
@@ -87,14 +86,14 @@ function fibonacci(n) {
  * console.log(sumFn(3)) - 18
  */
 function getOperationFn(initialValue, operatorFn) {
-    if (typeof operatorFn !== "function") {
-        return () => initialValue;
-    }
-    let storedValue = initialValue;
+    let saveValue = initialValue;
 
-    return function (initialValue) {
-        storedValue = operatorFn(storedValue, newValue); 
-    }
+    if(typeof operatorFn !== 'function') return () => initialValue;
+        return function(newValue) {
+            func = operatorFn(saveValue, newValue);
+            saveValue = func;
+            return func;
+        }
 }
 
 /**
@@ -113,14 +112,13 @@ function getOperationFn(initialValue, operatorFn) {
  * console.log(generator()); // 7
  * console.log(generator()); // 9
  */
-function sequence(start, step) {
-    let current = start;
-
-    return function() {
-        const value = current;
-        current += step; // Увеличиваем текущее значение на шаг
-        return value; // Возвращаем предыдущее значение
-    };
+function sequence(start = 0, step = 1) {
+    let currentVal = start;
+    return function(){
+        const nextVal = currentVal;
+        currentVal += step;
+        return nextVal;
+    }
 }
 
 /**
@@ -138,33 +136,20 @@ function sequence(start, step) {
  * deepEqual({arr: [22, 33], text: 'text'}, {arr: [22, 3], text: 'text2'}) // false
  */
 function deepEqual(firstObject, secondObject) {
-    // Если значения идентичны, они равны
-    if (firstObject === secondObject) return true;
-
-    // Если один из них null или не объект, они не равны
-    if (
-        firstObject === null || typeof firstObject !== "object" ||
-        secondObject === null || typeof secondObject !== "object"
-    ) {
-        return false;
-    }
-
-    // Получаем ключи объектов
+    if(firstObject === secondObject) return true
+    if (Number.isNaN(firstObject) && Number.isNaN(secondObject)) return true;
+    if (typeof firstObject !== 'object' || typeof secondObject !== 'object' || firstObject === null || secondObject === null) return false;
+    
     const keysFirst = Object.keys(firstObject);
     const keysSecond = Object.keys(secondObject);
-
-    // Если количество ключей не совпадает, объекты не равны
+    
     if (keysFirst.length !== keysSecond.length) return false;
 
-    // Рекурсивно проверяем каждое свойство
-    for (const key of keysFirst) {
-        // Если ключа нет во втором объекте или значения не равны, возвращаем false
-        if (!keysSecond.includes(key) || !deepEqual(firstObject[key], secondObject[key])) {
-            return false;
-        }
+    for (let key of keysFirst) {
+        if (!deepEqual(firstObject[key], secondObject[key])) return false;
     }
-
-    return true; // Если все ключи и значения совпадают
+    
+    return true;
 }
 
 module.exports = {
@@ -179,4 +164,3 @@ module.exports = {
     sequence,
     deepEqual,
 };
-
