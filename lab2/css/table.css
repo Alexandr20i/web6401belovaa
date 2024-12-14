@@ -4,7 +4,6 @@
     justify-content: center;
     margin-top: 20px;
     margin-block-end: 50px; /* Промежуток между таблицей и футером */
-
 }
 
 table {
@@ -12,7 +11,7 @@ table {
     max-width: 1000px; /* Ограничим максимальную ширину */
     border-collapse: separate;
     border-spacing: 5px 5px; /* Увеличивает расстояние между столбцами и строками */
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 th, td {
