@@ -1,0 +1,99 @@
+/* Coffee grid styles */
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* .coffee-card {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+/* Общий стиль карточки кофе */
+.coffee-card {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Заголовок карточки */
+.coffee-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Описание */
+.coffee-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+/* Опции объёма */
+.coffee-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.coffee-options .label {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.coffee-options .option {
+    font-size: 0.85em;
+    color: #555;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: color 0.3s ease;
+}
+
+
+/* Цены */
+.coffee-price {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.coffee-price .price {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Ховер эффект для карточки */
+.coffee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #444;
+    font-weight: bold;
+}

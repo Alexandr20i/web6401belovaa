@@ -32,15 +32,47 @@ header {
     font-size: 32px;
 }
 
-.header-right a {
-    color: #ffe;
-    text-decoration: none;
-    margin-left: 26px;
+/* Стили для навигации */
+.header-right {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
 
-.header-right a:hover {
-    color: #fff;
+/* Стили для кнопок в навигации */
+.header-right button {
+    background-color: #6b4f4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Arial', sans-serif;
 }
+
+/* Эффект при наведении */
+.header-right button:hover {
+    background-color: #8f3f30;
+    transform: scale(1.05);
+}
+
+/* Эффект при нажатии */
+.header-right button:active {
+    transform: scale(0.95);
+}
+
+/* Дополнительный отступ для небольших экранов */
+@media (max-width: 600px) {
+    .header-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 
 /* Стили для главного содержимого */
 main {
@@ -115,4 +147,5 @@ footer {
     width: 100%;
     margin-top: 50px; /* Промежуток между основным содержимым и футером */
 }
+
 

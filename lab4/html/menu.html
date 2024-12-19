@@ -6,6 +6,8 @@
     <title>Меню - Coffe 19/17</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/coffe.css">
+
 
 </head>
 <body>
@@ -15,132 +17,203 @@
             <h1>Coffe 19/17</h1>
         </div>
         <nav class="header-right">
-            <a href="index.html">Главная</a>
-            <a href="menu.html">Меню</a>
-            <a href="contact.html">Контакты</a>
+            <button onclick="location.href='index.html'">Главная</button>
+            <button onclick="location.href='menu.html'">Меню</button>
+            <button onclick="location.href='contact.html'">Контакты</button>
         </nav>
     </header>
     <main>
-        <h2>Классика</h2>
-        <table>
-            <tr>
-                <th>Название</th>
-                <th>200 мл</th>
-                <th>400 мл</th>
-                <th>600 мл</th>
-                <th>Описание</th>
-            </tr>
-            <tr>
-                <td>Капучино</td>
-                <td align="right">149 ₽</td>
-                <td align="right">209 ₽</td>
-                <td align="right">249 ₽</td>
-                <td align="left">Классический кофе с насыщенной молочной пенкой</td>
-            </tr>
-            <tr>
-                <td>Латте</td>
-                <td align="right">149 ₽</td>
-                <td align="right">209 ₽</td>
-                <td align="right">249 ₽</td>
-                <td align="left">Нежный кофейный напиток с мягким вкусом молока</td>
-            </tr>
-            <tr>
-                <td>Американо</td>
-                <td align="right">139 ₽</td>
-                <td align="right">189 ₽</td>
-                <td align="right">229 ₽</td>
-                <td align="left">Легкий черный кофе с добавлением горячей воды</td>
-            </tr>
-            <tr>
-                <td>Горячий шоколад</td>
-                <td align="right">199 ₽</td>
-                <td align="right">349 ₽</td>
-                <td align="right">389 ₽</td>
-                <td align="left">Густой напиток с насыщенным вкусом какао</td>
-            </tr>
-            <tr>
-                <td>Какао</td>
-                <td align="right">149 ₽</td>
-                <td align="right">209 ₽</td>
-                <td align="right">239 ₽</td>
-                <td align="left">Сладкий шоколадный напиток с молочной основой</td>
-            </tr>
-            <tr>
-                <td>Моккачино</td>
-                <td align="right">219 ₽</td>
-                <td align="right">339 ₽</td>
-                <td align="right">399 ₽</td>
-                <td align="left">Кофе с шоколадом и молочной пеной</td>
-            </tr>
-            <tr>
-                <td>Флэт уайт</td>
-                <td align="right">169 ₽</td>
-                <td align="right">239 ₽</td>
-                <td align="right">289 ₽</td>
-                <td align="left">Крепкий эспрессо с бархатистым молоком</td>
-            </tr>
-            <tr>
-                <td>Раф</td>
-                <td align="right">169 ₽</td>
-                <td align="right">239 ₽</td>
-                <td align="right">289 ₽</td>
-                <td align="left">Кремовый напиток с добавлением сливок и ванили</td>
-            </tr>
-            <tr>
-                <td>Сливочный Флэт</td>
-                <td align="right">189 ₽</td>
-                <td align="right">259 ₽</td>
-                <td align="right">309 ₽</td>
-                <td align="left">Мягкий кофейный вкус со сливочной текстурой</td>
-            </tr>
-        </table>
-
-        <h2>Авторские</h2>
-        <table>
-            <tr>
-                <th>Название</th>
-                <th>250 мл</th>
-                <th>400 мл</th>
-                <th>600 мл</th>
-                <th>Описание</th>
-            </tr>
-            <tr>
-                <td>Раф "Пряный цитрус"</td>
-                <td align="right">189 ₽</td>
-                <td align="right">259 ₽</td>
-                <td align="right">309 ₽</td>
-                <td align="left">Ванильный раф с нотами пряностей и цитруса</td>
-            </tr>
-            <tr>
-                <td>Раф "Лаванда"</td>
-                <td align="right">189 ₽</td>
-                <td align="right">259 ₽</td>
-                <td align="right">309 ₽</td>
-                <td align="left">Нежный раф с легким ароматом лаванды</td>
-            </tr>
-            <tr>
-                <td>Раф "Арахис"</td>
-                <td align="right">189 ₽</td>
-                <td align="right">259 ₽</td>
-                <td align="right">309 ₽</td>
-                <td align="left">Кремовый кофе с ореховыми нотками</td>
-            </tr>
-            <tr>
-                <td>Раф "Сырный"</td>
-                <td align="right">199 ₽</td>
-                <td align="right">349 ₽</td>
-                <td align="right">389 ₽</td>
-                <td align="left">Оригинальный раф с тонким сливочно-сырным вкусом</td>
-            </tr>
-            <tr>
-                <td>Раф "Малина ежевика"</td>
-                <td align="right">189 ₽</td>
-                <td align="right">259 ₽</td>
-                <td align="right">309 ₽</td>
-                <td align="left">Ягодный раф с ароматом малины и ежевики</td>
-            </tr>
-        </table>
+        <h2 class="section-title">Классика</h2>
+        <div class="coffee-grid">
+            <div class="coffee-card">
+                <h3 class="coffee-title">Капучино</h3>
+                <p class="coffee-description">Классический кофе с насыщенной молочной пенкой</p>
+                
+                <div class="coffee-price">
+                    <span class="price">149 ₽ | 209 ₽ | 249 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,2 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Латте</h3>
+                <p class="coffee-description">Нежный кофейный напиток с мягким вкусом молока</p>
+                
+                <div class="coffee-price">
+                    <span class="price">149 ₽ | 209 ₽ | 249 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,2 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Американо</h3>
+                <p class="coffee-description">Легкий черный кофе с добавлением горячей воды</p>
+                
+                <div class="coffee-price">
+                    <span class="price">139 ₽ | 189 ₽ | 229 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,2 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Горячий шоколад</h3>
+                <p class="coffee-description">Густой напиток с насыщенным вкусом какао</p>
+                
+                <div class="coffee-price">
+                    <span class="price">199 ₽ | 349 ₽ | 389 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,2 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Какао</h3>
+                <p class="coffee-description">Сладкий шоколадный напиток с молочной основой</p>
+                
+                <div class="coffee-price">
+                    <span class="price">149 ₽ | 209 ₽ | 239 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,2 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Моккачино</h3>
+                <p class="coffee-description">Кофе с шоколадом и молочной пеной</p>
+                
+                <div class="coffee-price">
+                    <span class="price">219 ₽ | 339 ₽ | 399 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,2 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Флэт уайт</h3>
+                <p class="coffee-description">Крепкий эспрессо с бархатистым молоком</p>
+                
+                <div class="coffee-price">
+                    <span class="price">169 ₽ | 239 ₽ | 289 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,2 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Раф</h3>
+                <p class="coffee-description">Кремовый напиток с добавлением сливок и ванили</p>
+                
+                <div class="coffee-price">
+                    <span class="price">169 ₽ | 239 ₽ | 289 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,2 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Сливочный Флэт</h3>
+                <p class="coffee-description">Мягкий кофейный вкус со сливочной текстурой</p>
+                
+                <div class="coffee-price">
+                    <span class="price">189 ₽ | 259 ₽ | 309 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,2 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+        </div>
+    
+        <h2 class="section-title">Авторское</h2>
+        <div class="coffee-grid">
+            <div class="coffee-card">
+                <h3 class="coffee-title">Раф "Пряный цитрус"</h3>
+                <p class="coffee-description">Ванильный раф с нотами пряностей и цитруса</p>
+                
+                <div class="coffee-price">
+                    <span class="price">189 ₽ | 259 ₽ | 309 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,25 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Раф "Лаванда"</h3>
+                <p class="coffee-description">Нежный раф с легким ароматом лаванды</p>
+                
+                <div class="coffee-price">
+                    <span class="price">189 ₽ | 259 ₽ | 309 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,25 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Раф "Арахис"</h3>
+                <p class="coffee-description">Кремовый кофе с ореховыми нотками</p>
+                
+                <div class="coffee-price">
+                    <span class="price">189 ₽ | 259 ₽ | 309 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,25 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Раф "Сырный"</h3>
+                <p class="coffee-description">Оригинальный раф с тонким сливочно-сырным вкусом</p>
+                
+                <div class="coffee-price">
+                    <span class="price">199 ₽ | 349 ₽ | 389 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,25 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+            <div class="coffee-card">
+                <h3 class="coffee-title">Раф "Малина ежевика"</h3>
+                <p class="coffee-description">Ягодный раф с ароматом малины и ежевики</p>
+                
+                <div class="coffee-price">
+                    <span class="price">189 ₽ | 259 ₽ | 309 ₽</span>
+                </div>
+                <div class="coffee-options">
+                    <span class="option">0,25 л</span>
+                    <span class="option">0,4 л</span>
+                    <span class="option">0,6 л</span>
+                </div>
+            </div>
+        </div>
     </main>
+    
     <footer>
         <p>&copy; 2024 Coffe 19/17.</p>
     </footer>
