@@ -149,3 +149,26 @@ footer {
 }
 
 
+.reviews {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #6b4f4f;
+}
+
+.review {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+.review strong {
+    color: #6b4f4f;
+}
+

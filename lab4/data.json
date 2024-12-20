@@ -1,0 +1,14 @@
+{
+      "/reviews": {
+        "get": {
+            "data": [
+                {"email":"test@test.ru","text": "каййф"}
+            ]
+        },
+        "post": {
+            "data": [
+                {"email":"test@test.ru","text": "каййф_post"}
+            ]
+        }
+    }
+}
